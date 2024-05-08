@@ -1,0 +1,1299 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Playfair Display", serif;
+}
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1025px) {
+}
+
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 19.5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 10%;
+	background: white;
+	margin-bottom: 30px;
+}
+body{
+	background: #CBC3E3;
+}
+.logo{
+	position: absolute;
+	right: 40px;
+	top:20px;
+	z-index:101;
+}
+.navlist{
+	display: flex;
+	text-decoration: none;
+	font-weight: bold;
+	top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+
+.navbar a {
+	font-size: 14px;
+	color: #2E1C18;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0 20px;
+	transition: .4s;
+	background: transparent;
+}
+.navbar a:hover{
+	background: #CBC3E3;
+	border: 5px solid;
+	border-radius: 15px;
+	padding: 10px;
+}
+.navbar a.active {
+	color: purple;
+}
+
+.social-media {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	height: 40px;
+}
+
+.social-media a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	text-decoration: none;
+	border: 2px solid transparent;
+	transition: .5s;
+}
+
+
+.social-media a:hover{
+	border-color: purple;
+}
+
+.social-media a i{
+	font-size: 24px;
+	color: #2E1C18;
+}
+
+.home {
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	padding: 30px 8% 0;
+	padding-top: 60px;
+}
+
+
+.home-content h1 {
+	font-size: 80px;
+	line-height: 1.5;
+	color: purple;
+}
+
+.home-content h3{
+	font-size: 40px;
+	color: purple;
+}
+
+.home-content p {
+	font-size: 16px;
+	margin: 15px 0 10px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 9px 16px;
+	background: purple;
+	border: 2px solid #2E1C18;
+	border-radius: 15px;
+	box-shadow: 0 0 10px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: .5s;
+	overflow: hidden;
+	position: relative;
+}
+
+.btn:hover{
+	background: transparent;
+	color: CBC3E3;
+}
+
+.milkshakes {
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+
+
+.oreohome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.oreohome-content h1 {
+	font-size: 60px;
+	line-height: 1.5;
+	color: #2E1C18;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.oreohome-content h3{
+	font-size: 60px;
+	line-height: 1.5;
+	color: #2E1C18;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.oreohome-content p {
+	font-size: 16px;
+	margin: 15px 0 10px;
+}
+
+.strawberryhome-content h3{
+  font-size: 60px;
+  line-height: 1.5;
+  color: #C70709;
+  margin-top: 400px;
+  text-align: center;
+}
+
+.strawberryhome-content p {
+  font-size: 16px;
+  margin: 15px 0 10px;
+}
+
+.strawberryhome-content h1 {
+  font-size: 60px;
+  line-height: 1.5;
+  color: #2E1C18;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.strawberrybox p{
+  color: #C70709;
+  font-weight: bold;
+}
+
+.oreoimage{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-left: 30px;
+
+}
+.oreoimage img{
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	border: 20px solid white;
+	background: white;
+}
+
+.square-box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 10px solid #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    float: right;
+}
+
+.square-box p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.hero-content h1{
+	color: white;
+	font-weight: bold;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(255,255,255,0.8); 
+  margin-top: 0.5px;
+}
+
+/* Contact Information Styles */
+.contact-details {
+  margin-bottom: 40px;
+}
+
+.contact-details h2, .contact-details p, .contact-details address {
+  margin: 10px 0;
+  color: #2E1C18;
+}
+
+.contact-details a {
+  color: #2E1C18;
+  text-decoration: none;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.contact-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #2E1C18; /* Matching text color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #2E1C18; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #3f2a22;
+}
+
+
+body, h1, h2, p, a, form {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-content {
+  background: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-top: 0px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+#tellmemorebtn {
+  background-color: #7d4c8d;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#tellmemorebtn:hover {
+  background-color: #6c3975;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reviewss .inner {
+  padding: 4rem;
+  background-color: #f4f4f4;
+}
+
+.reviewss h1 {
+  color: #2E1C18;
+  margin-bottom: 1rem;
+}
+
+.reviewss .border {
+  background: #7d4c8d;
+  height: 4px;
+  width: 200px;
+  margin: 1rem auto;
+}
+
+.reviewss .reviews {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.hero {
+  background: url(figma-to-html/images/smoothie.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.opening-hours {
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.opening-hours h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.opening-hours p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn {
+  background-color: #7d4c8d; /* Primary color for your buttons */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6c3975; 
+}
+
+
+.social-media a i {
+  color: black; 
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+.navbar a {
+  color: #333;
+}
+
+.navbar a.active {
+  color: #7d4c8d;
+  font-weight: bold;
+}
+
+#footer{
+    width: 100%;
+    background-color: #CBC3E3;
+    margin-top: 10px;
+}
+#footer h1{
+    color: purple;
+    padding-top: 30px;
+    font-weight: bold;
+}
+#footer p{
+    color: purple;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.social-media2 i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40px;
+	height: 40px;
+	background: transparent;
+	text-decoration: none;
+	border: 2px solid transparent;
+	transition: .5s;
+}
+.social-media2 i:hover{
+	border-color: purple;
+}
+.copyright{
+    color: purple;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.credite{
+    color: purple;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.menu-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Change as needed */
+}
+
+.menu-title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.smoothie-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Spacing between items */
+}
+
+.smoothie-item {
+    flex-basis: calc(25% - 20px); /* Four items minus the gap */
+    margin-bottom: 20px; /* Spacing below each item */
+}
+
+.smoothie-image {
+    width: 100%; /* Responsive images */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.smoothie-name {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .smoothie-menu {
+        justify-content: center;
+    }
+    .smoothie-item {
+        flex-basis: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+/* Add any additional styles you need here */
+.menu-page {
+  padding: 50px;
+  background-color: #f5f5f5; /* Light background for the menu page */
+}
+
+.menu-section {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the menu section */
+  text-align: center; /* Center the text for the title */
+}
+
+.menu-title {
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Large font size for the title */
+  color: #333; /* Dark color for the title */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+  gap: 30px; /* Space between items */
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: #ffffff; /* White background for each item */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the item cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+}
+
+.menu-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Slightly rounded corners for the images */
+  margin-bottom: 15px; /* Space between the image and the name */
+}
+
+.item-name {
+  font-size: 1.2rem;
+  color: #333; /* Dark color for the item name */
+  margin-bottom: 5px; /* Small space below the name */
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two items in a row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr; /* One item per row on very small screens */
+  }
+}
+
+/* Styles for the cup container */
+.cup-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cup {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Styles for the cup image */
+.cup img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some space between the image and button */
+}
+
+/* Styles for the add to basket button */
+.add-to-basket {
+  padding: 10px 20px;
+  background-color: #483830;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.add-to-basket:hover {
+  background-color: purple;
+}
+
+.cup-selection {
+  background-color: white; /* Set background color to white */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles for the basket */
+#basket {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#basket h2 {
+  margin-top: 0;
+}
+
+#basket-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#basket-items li {
+  margin-bottom: 5px;
+}
+
+/* Styles for the checkout button */
+#checkout-btn {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for the cup size heading */
+h1 {
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase */
+  color: #2E1C18;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase */
+  color: #2E1C18;
+}
+
+.oreohome-content h3 {
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase */
+  color: #2E1C18;
+}
+
+.cup img{
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	border: 20px #483830;
+	background: #483830;
+}
+
+.vanillacup img{
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	border: 20px white;
+	background: white;
+}
+
+.vanillacup-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vanillacup {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Styles for the cup image */
+
+.bananashake img{
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  border: 20px white;
+  background: white;
+}
+.bananashake img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some space between the image and button */
+}
+
+
+.bananashake-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bananashake {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Styles for the cup image */
+.strawberrycup img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some space between the image and button */
+}
+
+.strawberrycup img{
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	border: 20px white;
+	background: white;
+}
+.strawberrycup img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some space between the image and button */
+}
+
+
+.strawberrycup-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.strawberrycup {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Styles for the cup image */
+.strawberrycup img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Add some space between the image and button */
+}
+
+
+
+
+
+/*matthew*/
+.menu-header {
+    background: #CBC3E3; /* Match the header color */
+    text-align: center;
+    padding: 200px 100px;
+    position: relative; /* Needed for z-index to take effect */
+    z-index: 10; /* Ensure the title appears above other content */
+}
+
+.menu-title {
+    display: inline-block;
+    background: white; /* White background */
+    padding: 10px 40px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add shadow for depth */
+    position: relative; /* Needed for z-index to take effect */
+    z-index: 20; /* Above the banner */
+    font-size: 2rem; /* Larger font size */
+    color: #7d4c8d; /* Theme color for the text */
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+    padding: 90px 0; /* Space below the menu title */
+    margin-top: -140px;
+}
+
+.menu-item {
+    width: 22%;
+    margin: 0 1%;
+    text-align: center;
+    background: white; /* White background for each item */
+    border-radius: 10px; /* Rounded corners for the items */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Consistent shadow with title */
+    transition: transform 0.3s;
+    text-decoration: none; /* Remove underline from anchor tags */
+    color: #333; /* Text color for the items */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Hover effect to scale items */
+}
+
+.menu-item img {
+    max-width: 100%; /* Responsive image settings */
+    border-radius: 10px; /* Consistent with the item border radius */
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0; /* Space between image and text */
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 45%; /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: 90%; /* 1 item per row on small screens */
+    }
+}
+
+main {
+    padding-top: 140px; /* Adjust the value as needed to create space */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background: #2196F3;
+  margin: 0 10px;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+/* This is for the review page*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  display: flex;
+}
+.social-media a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+.social-media a:hover {
+  color: #ff6600;
+}
+.allergy-info {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.allergy-info h1 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+.allergy-info p {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.allergy-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.allergy-info ul li {
+  margin-bottom: 10px;
+}
+.allergy-info ul li strong {
+  color: #ff6600;
+}
+.allergy-info .contact-info {
+  margin-top: 30px;
+}
+
+.review-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.review-container h2 {
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.review {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.review:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.review p {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.review .author {
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ff6600;
+}
+
+.checkout-container {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h1 {
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-form label {
+  margin-bottom: 5px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.checkout-form button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #e65100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Change this to 'flex-start' for left alignment, 'flex-end' for right alignment */
+  height: 100vh; /* This makes sure your box is centered vertically as well */
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+  border: 10px solid #2E1C18;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: -550px;
+  right: -300px;
+}
+
+.bananabox {
+  width: 400px;
+  height: 350px;
+  border: 10px solid #2E1C18;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: -550px;
+  right: -300px;
+}
+
+.bananabox p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.strawberrybox {
+  width: 400px;
+  height: 350px;
+  border: 10px solid #C70709;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: -580px;
+  right: -300px;
+}
+
+.strawberrybox p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vanillabox {
+  width: 400px;
+  height: 320px;
+  border: 10px solid #2E1C18;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  top: -600px;
+  right: -300px;
+}
+
+.vanillabox p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+section {
+  margin-top: -140px; /* Adjust as needed */
+  margin-bottom: 50px; /* Adjust as needed */
+}
+
+.cupsize {
+  margin-top: -590px; /* Adjust as needed */
+}
+
+button.add-to-basket1 {
+  background-color: #C70709;
+  color: white; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.add-to-basket1:hover {
+  background-color: lightpink;
+}
+
+button.add-to-basket2 {
+  background-color: #FDCC2E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.add-to-basket2:hover {
+  background-color: lightpink;
+}
+
+#checkout-btn{
+  background-color: #white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#checkout-btn:hover {
+  background-color: #CBC3E3;
+}

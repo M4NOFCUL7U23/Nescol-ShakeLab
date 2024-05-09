@@ -1347,7 +1347,11 @@ button.add-to-basket2 {
   flex-direction: column;
 }
 
-.oreohome2{
+.oreohome,
+.oreohome2,
+.cupsize,
+#basket,
+#footer {
   text-align: center;
   padding: 20px;
 }

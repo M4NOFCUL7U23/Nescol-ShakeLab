@@ -22,8 +22,7 @@
 </head>
 
 <body>
-<form method="POST" name="Checkout" data-netlify="true">
-
+<form data-netlify="true" method="POST">
     <div class="paymentcontainer">
         <h1>Confirm Your Payment</h1>
         <div class="first-row">
@@ -82,23 +81,13 @@
                 </div>
             </div>    
         </div>
-        <button type="button" onclick="confirmPayment()">Confirm</button> <!-- Changed type to 'button' -->
+        <button onclick="confirmPayment()">Confirm</button>
         <button><a href="index.html">Home</a></button>
     </div>
-    <script>
-// Store basketItems and orderNumber in variables
-const orderNumber = Math.floor(Math.random() * 1000000);
-
-// Set the values of hidden input fields in the form
-document.getElementById('orderNumberInput').value = orderNumber.toString();
-</script>
-    <input type="hidden" name="orderNumber" id="orderNumberInput">
-    <div>
 </form>
 
 
 
-<script src="milkshake.js"></script>
+    <script src="milkshake.js"></script>
 </body>
 </html>
-

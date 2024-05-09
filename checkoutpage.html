@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<form data-netlify="true" method="POST" name="Checkout" data-netlify="true">
+<form method="POST" name="Checkout" data-netlify="true">
 
     <div class="paymentcontainer">
         <h1>Confirm Your Payment</h1>
@@ -92,7 +92,6 @@ const orderNumber = Math.floor(Math.random() * 1000000);
 // Set the values of hidden input fields in the form
 document.getElementById('orderNumberInput').value = orderNumber.toString();
 </script>
-</form>
     <input type="hidden" name="orderNumber" id="orderNumberInput">
     <div>
 </form>

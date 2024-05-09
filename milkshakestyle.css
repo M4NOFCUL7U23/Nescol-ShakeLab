@@ -1339,3 +1339,10 @@ button.add-to-basket2 {
 .menu.active .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
+
+.oreohome2 {
+  display: flex;
+  justify-content: center; /* Horizontally centers content */
+  align-items: center; /* Vertically centers content */
+  height: 100vh; /* Adjust as needed */
+}

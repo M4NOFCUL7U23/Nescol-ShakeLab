@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<form data-netlify="true" method="POST" id="payment-form" data-netlify="true">
+<form data-netlify="true" method="POST" name="Checkout" data-netlify="true">
 
     <div class="paymentcontainer">
         <h1>Confirm Your Payment</h1>
@@ -85,6 +85,7 @@
         <button type="button" onclick="confirmPayment()">Confirm</button> <!-- Changed type to 'button' -->
         <button><a href="index.html">Home</a></button>
     </div>
+    <input type="hidden" name="orderNumber" id="orderNumberInput">
     <div>
 </form>
 
@@ -98,7 +99,7 @@ document.getElementById('basketItemsInput').value = JSON.stringify(basketItems);
 document.getElementById('orderNumberInput').value = orderNumber.toString();
 </script>
     
-    <form data-netlify="true" method="POST" id="payment-form" data-netlify="true">
+    <form data-netlify="true" method="POST" name ="payment-form" data-netlify="true">
          <!-- Hidden input fields for basketItems and orderNumber -->
     <input type="hidden" name="basketItems" id="basketItemsInput">
     <input type="hidden" name="orderNumber" id="orderNumberInput">

@@ -1170,7 +1170,7 @@ body {
 }
 
 .container {
-  display: flex;
+  display: absolute;
   justify-content: center; /* Change this to 'flex-start' for left alignment, 'flex-end' for right alignment */
   height: 100vh; /* This makes sure your box is centered vertically as well */
   align-items: center;

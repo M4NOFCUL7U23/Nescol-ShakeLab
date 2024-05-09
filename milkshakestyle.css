@@ -1342,7 +1342,12 @@ button.add-to-basket2 {
 
 .oreohome2 {
   display: flex;
-  justify-content: center; /* Horizontally centers content */
-  align-items: center; /* Vertically centers content */
-  height: 100vh; /* Adjust as needed */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.oreohome2{
+  text-align: center;
+  padding: 20px;
 }

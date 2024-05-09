@@ -85,25 +85,16 @@
         <button type="button" onclick="confirmPayment()">Confirm</button> <!-- Changed type to 'button' -->
         <button><a href="index.html">Home</a></button>
     </div>
-    <input type="hidden" name="orderNumber" id="orderNumberInput">
-    <div>
-</form>
-
     <script>
 // Store basketItems and orderNumber in variables
-const basketItems = JSON.parse(localStorage.getItem('basketItems'));
 const orderNumber = Math.floor(Math.random() * 1000000);
 
 // Set the values of hidden input fields in the form
-document.getElementById('basketItemsInput').value = JSON.stringify(basketItems);
 document.getElementById('orderNumberInput').value = orderNumber.toString();
 </script>
-    
-    <form data-netlify="true" method="POST" name ="payment-form" data-netlify="true">
-         <!-- Hidden input fields for basketItems and orderNumber -->
-    <input type="hidden" name="basketItems" id="basketItemsInput">
+</form>
     <input type="hidden" name="orderNumber" id="orderNumberInput">
-    </div>
+    <div>
 </form>
 
 

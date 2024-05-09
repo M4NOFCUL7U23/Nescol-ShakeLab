@@ -160,15 +160,6 @@ function confirmPayment(event) {
     }, 5000);
 }
 
-// Get the form and hidden input fields
-const form = document.getElementById('payment-form');
-const basketItemsInput = document.getElementById('basketItemsInput');
-const orderNumberInput = document.getElementById('orderNumberInput');
-
-// Set the values of basketItems and orderNumber to the hidden input fields
-basketItemsInput.value = JSON.stringify(basketItems);
-orderNumberInput.value = orderNumber;
-
 var basket = [
   { name: "Small Banana Milkshake", price: 2.00 },
   { name: "Medium Banana Milkshake", price: 4.00 },

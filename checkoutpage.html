@@ -84,15 +84,6 @@
         <button onclick="confirmPayment()">Confirm</button>
         <button><a href="index.html">Home</a></button>
     </div>
-<script>
-// Store basketItems and orderNumber in variables
-const basketItems = JSON.parse(localStorage.getItem('basketItems'));
-const orderNumber = Math.floor(Math.random() * 1000000);
-
-// Set the values of hidden input fields in the form
-document.getElementById('basketItemsInput').value = JSON.stringify(basketItems);
-document.getElementById('orderNumberInput').value = orderNumber.toString();
-</script>
 
 </form>
 

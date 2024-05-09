@@ -1195,9 +1195,9 @@ body {
   background-color: white;
   padding: 10px;
   text-align: center;
-  position: fixed;
-  top: -550px;
-  right: -300px;
+  position: absolute;
+  top: 50px;
+ 
 }
 
 .bananabox p{

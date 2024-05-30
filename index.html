@@ -5,64 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>NESCOL SHAKELAB</title>
+    <!-- Include CSS files -->
     <link rel="stylesheet" href="milkshakestyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
-  <body style="background-color: #CBC3E3;">
+<body style="background-color: #CBC3E3;">
     
-   <header class="header">
-        <img src="logo-removebg-preview.png" width="80" height="120">
-        <nav class="navbar">
-            <a href="milkshake website.html">HOME</a>
-            <a href="menu.html">MENU</a>
-            <a href="allergy.html">ALLERGY</a>
-            <a href="review.html">REVIEW</a>
-            <a href="contact.html" class="active">CONTACTUS</a>
-        </nav>
-        <div class="social-media">
-            <a href="twitterpage.html"><i class='bx bxl-twitter'></i></a>
-            <a href="instagrampage.html"><i class='bx bxl-instagram' ></i></a>
-            <a href="facebook.html"><i class='bx bxl-facebook' ></i></a>
-        </div>
-    </header>
-
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to NesCol ShakeLab!</h1>
-                <p>Delighting you with the most exquisite and fresh milkshake blends in town.</p>
-                <a href="menu.html" class="btn">Explore Our Flavors</a>
+<header class="header">
+    <img src="logo-removebg-preview.png" width="80" height="120">
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="allergy.html">ALLERGY</a>
+        <a href="review.html">REVIEW</a>
+        <a href="contact.html">CONTACTUS</a>
+        <div class="account-dropdown">
+            <i class='bx bx-user'></i>
+            <div class="dropdown-content">
+                <a href="login.html" id="login-link">Login</a>
+                <a href="registration.html" id="register-link">Register</a>
             </div>
-        </section>
-
-        <section class="opening-hours">
-            <h2>Opening Hours</h2>
-            <p>Monday to Thursday: 9am - 5pm</p>
-            <p>Friday: 10am - 4pm</p>
-        </section>
-        
-    </main>
-
-    <footer id="footer">
-        <h1 class="text-center">NesCol Shakelab</h1>
-        <p class="text-center">Delighting you with the most exquisite and fresh milkshake blends in town.</p>
-       <div class="social-media2 text-center">
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-tiktok' ></i></a>
         </div>
-        <div class="copyright text-center">
-            &copy; Copyright <strong><span>NesCol Shakelab</span></strong>. All Rights Reserved
-        </div>
-        <div class="credite text-center">
-            Designed By Best ,Matthew D, Matthew M, Dante & Otormiefe
-        </div>
-    </footer>
+    </nav>
+    <div class="social-media">
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+    </div>
+</header>
 
+<main>
+    <!-- Registration form -->
+    <section id="register-form" style="display: none;">
+        <h2>Register</h2>
+        <form action="registration.html" method="post">
+            <label for="reg_username">Username:</label><br>
+            <input type="text" id="reg_username" name="username" required><br>
+            <label for="reg_password">Password:</label><br>
+            <input type="password" id="reg_password" name="password" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </section>
 
-    <script src="milkshake.js"></script>
+    <!-- Login form -->
+    <section id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <form action="login.html" method="post">
+            <label for="login_username">Username:</label><br>
+            <input type="text" id="login_username" name="username" required><br>
+            <label for="login_password">Password:</label><br>
+            <input type="password" id="login_password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NesCol ShakeLab!</h1>
+            <p>Delighting you with the most exquisite and fresh milkshake blends in town.</p>
+            <a href="menu.html" class="btn">Explore Our Flavors</a>
+        </div>
+    </section>
+
+    <section class="opening-hours">
+        <h2>Opening Hours</h2>
+        <p>Monday to Thursday: 9am - 5pm</p>
+        <p>Friday: 10am - 4pm</p>
+    </section>
+</main>
+
+<footer id="footer">
+    <h1 class="text-center">NesCol Shakelab</h1>
+    <p class="text-center">Delighting you with the most exquisite and fresh milkshake blends in town.</p>
+   <div class="social-media2 text-center">
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+    </div>
+    <div class="copyright text-center">
+        &copy; Copyright <strong><span>NesCol Shakelab</span></strong>. All Rights Reserved
+    </div>
+    <div class="credite text-center">
+        Designed By Best ,Matthew D, Matthew M, Dante & Otormiefe
+    </div>
+</footer>
+
+<!-- Include JavaScript file -->
+<script src="milkshake.js"></script>
 </body>
 </html>

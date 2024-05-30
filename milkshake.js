@@ -175,6 +175,14 @@ var basket = [
   { name: "Large Vanilla Milkshake", price: 6.00 },
 ];
 
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.menu').classList.toggle('active');
-        });
+document.getElementById("login-link").addEventListener("click", function(event){
+    event.preventDefault();
+    // Show login form or redirect to login page
+    // Example: window.location.href = "login.html";
+});
+
+document.getElementById("register-link").addEventListener("click", function(event){
+    event.preventDefault();
+    // Show registration form or redirect to registration page
+    // Example: window.location.href = "registration.html";
+});

@@ -1,0 +1,280 @@
+-Global styles-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Playfair Display", serif;
+}
+
+body {
+	background: #CBC3E3;
+}
+
+-Header-
+header {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 19.5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 10%;
+	background: white;
+	margin-bottom: 30px;
+}
+
+.logo {
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	z-index: 101;
+}
+
+-Navigation Styles-
+.navlist {
+	display: flex;
+	text-decoration: none;
+	font-weight: bold;
+	top: 0;
+	width: 100%;
+	background-color: #fff; /* Add your desired background color */
+	z-index: 1000;
+	transition: top 0.3s;
+}
+
+.navbar a {
+	font-size: 14px;
+	color: #2E1C18;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0 20px;
+	transition: .4s;
+	background: transparent;
+}
+
+.navbar a:hover {
+	background: #CBC3E3;
+	border: 5px solid;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.navbar a.active {
+	color: purple;
+}
+
+-Social media icons-
+.social-media {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	height: 40px;
+}
+
+.social-media a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	text-decoration: none;
+	border: 2px solid transparent;
+	transition: .5s;
+}
+
+.social-media a:hover {
+	border-color: purple;
+}
+
+.social-media a i {
+	font-size: 24px;
+	color: #2E1C18;
+}
+
+-Home Section-
+.home {
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	padding: 30px 8% 0;
+	padding-top: 60px;
+}
+
+.home-content h1 {
+	font-size: 80px;
+	line-height: 1.5;
+	color: purple;
+}
+
+.home-content h3 {
+	font-size: 40px;
+	color: purple;
+}
+
+.home-content p {
+	font-size: 16px;
+	margin: 15px 0 10px;
+}
+
+.home-content {
+	background: #fff; /* White background for the content */
+	text-align: center;
+	padding: 4rem 1rem;
+	margin-top: 0px; /* To account for fixed header */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+-Home section Button-
+#tellmemorebtn {
+	background-color: #7d4c8d; /* Purple color for the button */
+	color: white;
+	padding: 10px 20px;
+	display: inline-block; /* Needed to apply margin auto */
+	margin: 20px auto;
+	border-radius: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#tellmemorebtn:hover {
+	background-color: #6c3975; /* Slightly darker purple on hover */
+	transition: background-color 0.3s ease-in-out;
+}
+
+
+-Hero Section-
+.hero-content h1 {
+	color: white;
+	font-weight: bold;
+}
+
+.hero {
+	background: url(figma-to-html/images/smoothie.jpg) no-repeat center center/cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+	z-index: -1;
+}
+
+
+-Contact us-
+.contact-section {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: rgba(255,255,255,0.8); /* Light background to stand out */
+}
+
+-Contact detials-
+.contact-details {
+	margin-bottom: 40px;
+}
+
+.contact-details h2, .contact-details p, .contact-details address {
+	margin: 10px 0;
+	color: #2E1C18; /* Harmonize with your color scheme */
+}
+
+.contact-details a {
+	color: #2E1C18;
+	text-decoration: none; /* Stylish links without underline */
+}
+
+-Contact form-
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto; /* Center the form */
+	padding: 20px;
+	background-color: #fff; /* Clear background for the form */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.contact-form label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: left;
+	color: #2E1C18; /* Matching text color */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.contact-form button {
+	background-color: #2E1C18; /* Primary button color */
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+	background-color: #3f2a22; /* Darker shade on hover */
+}
+
+-------
+body, h1, h2, p, a, form {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.main-content {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+-Review Page-
+.reviewss .inner {
+	padding: 4rem;
+	background-color: #f4f4f4; /* Light grey background */
+}
+
+.reviewss h1 {
+	color: #2E1C18;
+	margin-bottom: 1rem;
+}
+
+.reviewss .border {
+	background: #7d4c8d; /* Purple border under the title */
+	height: 4px;
+	width: 200px;
+	margin: 1rem auto;
+}
+
+.reviewss .reviews {
+	background-color: #fff; /* White background for each reviews */
+	padding: 2rem;
+	margin: 1rem 0;
+	border-radius: 8px; /* Rounded borders */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
